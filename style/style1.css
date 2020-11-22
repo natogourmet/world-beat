@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Beatley";
+    src: url("../fonts/Beatley.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bernard MT Condensed";
+    src: url("//db.onlinewebfonts.com/t/eceba41a00b4b94ea2965371c8dda96c.eot");
+    src: url("//db.onlinewebfonts.com/t/eceba41a00b4b94ea2965371c8dda96c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/eceba41a00b4b94ea2965371c8dda96c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/eceba41a00b4b94ea2965371c8dda96c.woff") format("woff"), url("//db.onlinewebfonts.com/t/eceba41a00b4b94ea2965371c8dda96c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/eceba41a00b4b94ea2965371c8dda96c.svg#Bernard MT Condensed") format("svg");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.btn-clear {
+    outline: none;
+    background: transparent;
+    padding: 0.75em;
+    border: none;
+    cursor: pointer;
+}
+
+.over-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 3s;
+}
+
+.hiding {
+    opacity: 0;
+}
+
+.main-title {
+    color: black;
+    font-family: "Beatley";
+    font-size: 20vh;
+    margin: -3rem;
+}
+
+.start-button {
+    font-family: "Bernard MT Condensed";
+    font-size: 5vh;
+    padding: 0 5rem;
+    background-color: #ffffff63;
+    transition: background-color 0.5s;
+}
+
+.start-button:hover {
+    cursor: pointer;
+    background-color: #ffffffb0;
+}
+
+#player {
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    width: 100%;
+    justify-content: center;
+    font-family: Arial;
+}
+
+#player.active {
+    display: flex;
+}
+
+.player__wrapper {
+    width: auto;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+}
+
+.player__body {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.player__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.player__title {
+    color: rgb(50, 194, 135);
+    font-size: x-large;
+}
+
+.player__place {
+    font-size: large;
+}
+
+.controls__volume {
+    background: rgb(50, 194, 135);
+}
+
+.player__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-left: solid 1px lightgray;
+}
+
+.player__actions>button {
+    flex-basis: 100%;
+}
+
+.player__actions>button>i {
+    margin: 0 0.5em;
+}
+
+.action__love {
+    border-bottom: solid 1px lightgray;
+}
+
+.country__link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+}
+
+.country__link a {
+    text-decoration: none;
+    color: black;
+}
+
+.country__link h3 {
+    font-size: 20px;
+}
+
+.country__link i {
+    font-size: 15px;
+}

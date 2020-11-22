@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Beatley";
+    src: url("../fonts/Beatley.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Beatley';
+    src: url('../fonts/Beatley.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+}
+
+body {
+    background-color: #22DBDD;
+    background-image: url("../img/japan.png");
+    background-repeat: no-repeat;
+}
+
+header {
+    max-width: 1400px;
+}
+
+.back img {
+    width: 100px;
+}
+
+.logo-text {
+    font-size: 100px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20vh;
+    margin: -3rem;
+}
+
+.movie h5 {
+    font-size: 200px;
+    color: #000000;
+}
+
+.main {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 1000px;
+}
+
+.recomended img {
+    height: 600px;
+    margin: auto;
+    display: block;
+    padding-top: 50px;
+}
+
+.movie h2 {
+    font-size: 100px;
+    color: #000000;
+}
+
+.recomended a img {
+    height: 100px;
+}
+
+.tracks {
+    font-size: 40px;
+}
+
+.compositores>.cont_gral {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.makoto {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.makoto img {
+    height: 400px;
+}
+
+.radwimps {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.radwimps img {
+    height: 400px;
+}
+
+.compositores {
+    font-size: 60px;
+}
+
+.sinopsis h3 {
+    font-size: 100px;
+}
+
+.sinopsis p {
+    font-size: 30px;
+    font-family: 'Courier Prime', monospace;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+}

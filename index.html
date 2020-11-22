@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="img/icono.png" />
+    <link rel="stylesheet" href="style/style1.css" />
+    <title>WorldBeat</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+    <script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+
+    <div id="mapdiv" style="width: 100%; height: 100vh"></div>
+
+    <div class="over-screen" id="overscreen">
+        <div class="main-title">WorldBeat</div>
+        <div class="start-button" onclick="hideOverscreen()">Let's go!</div>
+    </div>
+
+    <div id="player">
+        <div class="player__wrapper">
+            <div class="player__body">
+                <div class="player__info">
+                    <div class="player__title">The taste of kindness</div>
+                    <div class="player__place">Japan</div>
+                </div>
+
+                <div class="player__controls controls">
+                    <button class="btn-clear controls__backward">
+              <i class="fas fa-backward fa-lg"></i>
+            </button>
+                    <button class="btn-clear controls__play-pause fa-lg">
+              <i id="playPause" class="fas fa-play"></i>
+            </button>
+                    <button class="btn-clear controls__forward">
+              <i class="fas fa-forward fa-lg"></i>
+            </button>
+                    <input type="range" min="1" max="100" value="50" class="controls__volume" />
+                </div>
+                <div class="country__link">
+                    <a href="japan.html">
+                        <h3>Ir al país <i class="fas fa-arrow-right"></i></h3>
+                    </a>
+                </div>
+            </div>
+            <div class="player__actions">
+                <button class="btn-clear action__love">
+            <i class="far fa-heart fa-lg"></i>
+          </button>
+                <button class="btn-clear">
+            <i class="fas fa-ellipsis-h fa-lg"></i>
+          </button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const map = AmCharts.makeChart("mapdiv", {
+            type: "map",
+            theme: "dark",
+            projection: "miller",
+            panEventsEnabled: true,
+            backgroundColor: "#bae4fa",
+            backgroundAlpha: 1,
+            zoomControl: {
+                zoomControlEnabled: true,
+            },
+            dataProvider: {
+                map: "worldHigh",
+                getAreasFromMap: true,
+                areas: [],
+            },
+            areasSettings: {
+                autoZoom: true,
+                color: "#006cb7",
+                colorSolid: "#a1cb4c",
+                selectedColor: "#a1cb4c",
+                outlineColor: "#666666",
+                rollOverColor: "#a1cb4c",
+                rollOverOutlineColor: "#000000",
+            },
+        });
+    </script>
+</body>
+
+<script>
+    const overscreen = document.getElementById("overscreen"),
+        player = document.getElementById("player");
+    console.log(overscreen);
+
+    function hideOverscreen() {
+        overscreen.classList.add("hiding");
+
+        setTimeout(() => {
+            overscreen.style.display = "none";
+            player.classList.add("active");
+        }, 3000);
+    }
+</script>
+
+</html>

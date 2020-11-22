@@ -1,0 +1,283 @@
+@font-face {
+    font-family: "Beatley";
+    src: url("../fonts/Beatley.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Beatley';
+    src: url('../fonts/Beatley.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+}
+
+body {
+    background-color: #99ffff;
+    background-image: url("../img/japan.png");
+    background-repeat: no-repeat;
+}
+
+.cont_gral {
+    width: 100%;
+    margin: auto;
+    max-width: 1500px;
+}
+
+header {
+    max-width: 1400px;
+}
+
+.back {
+    position: absolute;
+    left: 0;
+    margin: 10px;
+}
+
+.back img {
+    width: 100px;
+}
+
+.logo {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+}
+
+.logo a {
+    color: #000000;
+    text-decoration: none;
+    color: black;
+    font-family: "Beatley";
+    font-size: 4rem;
+}
+
+.japan-title {
+    position: absolute;
+    width: 100%;
+    top: -150px;
+}
+
+.japan-title h5 {
+    font-size: 200px;
+    color: #414141;
+    font-family: "Great Vibes", cursive;
+    text-shadow: 2px 2px 0 white;
+}
+
+.main {
+    background-color: white;
+    width: 1000px;
+    position: relative;
+    top: 200px;
+    box-shadow: 10px 10px 0 #00000062;
+}
+
+.main-2 {
+    background-color: white;
+    width: 1000px;
+    position: relative;
+    top: 200px;
+    box-shadow: 10px 10px 0 #00000062;
+    padding-bottom: 50px;
+}
+
+.movie img {
+    margin: 50px;
+    width: 50%;
+}
+
+.movie h2 {
+    font-size: 4rem;
+}
+
+.tracks {
+    margin: 50px;
+}
+
+.tracks h4 {
+    font-size: 5rem;
+    text-align: left;
+}
+
+.tracks ol {
+    display: inline-block;
+}
+
+.tracks ol li {
+    font-size: 2rem;
+    font-family: "Courier Prime", monospace;
+}
+
+.compositores {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.compositor img {
+    width: 75%;
+}
+
+.compositor h3 {
+    font-size: 3rem;
+}
+
+.compositor h5 {
+    font-family: "Courier Prime", monospace;
+    font-size: 3rem;
+}
+
+.sinopsis {
+    margin: 50px;
+}
+
+.sinopsis h3 {
+    font-size: 7rem;
+}
+
+.sinopsis p {
+    font-family: "Courier Prime", monospace;
+    font-size: 1rem;
+}
+
+.horizontal-alignment {
+    padding: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.horizontal-alignment .title {
+    font-size: 75px;
+    margin: 0;
+}
+
+.horizontal-alignment a {
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.horizontal-alignment a img {
+    padding: 15px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 15px;
+}
+
+.summary * {
+    text-align: left;
+    margin: 0;
+}
+
+.recomended img {
+    height: 600px;
+    margin: auto;
+    display: block;
+    padding-top: 50px;
+}
+
+.recomended h2 {
+    font-size: 100px;
+    color: #000000;
+}
+
+.recomended a img {
+    height: 100px;
+}
+
+.movies h3 {
+    font-size: 50px;
+    color: #ffffff;
+    background-image: url("../img/menus.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-header {
+    background-color: white !important;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-link.focus,
+.btn-link:focus,
+.btn-link:hover {
+    text-decoration: none !important;
+}
+
+.movies>.cont_gral {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.violet_evergarden {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.violet_evergarden img {
+    height: 400px;
+}
+
+.violet_evergarden h4 {
+    font-size: 75px;
+    font-family: "Beatley";
+}
+
+.violet_evergarden p {
+    font-size: 30px;
+    font-family: "Courier Prime", monospace;
+}
+
+.violet_evergarden a img {
+    height: 100px;
+}
+
+.demon_slayer {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.demon_slayer img {
+    height: 400px;
+    width: 285px;
+}
+
+.demon_slayer h4 {
+    font-size: 75px;
+    font-family: "Beatley";
+}
+
+.demon_slayer p {
+    font-size: 30px;
+    font-family: "Courier Prime", monospace;
+}
+
+.demon_slayer a img {
+    width: 150px;
+    height: 100px;
+}
